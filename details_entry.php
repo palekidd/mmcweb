@@ -25,7 +25,7 @@ if(isset($_POST['save']))
 		$phone = $_POST['phone'];
 		
 //For inserting the values to mysql database_name
-		$sql_query = "INSERT INTO sql12595343 
+		$sql_query = "INSERT INTO details_entry 
 (first_name,last_name,gender,email,phone)
 		VALUES ('$first_name','$last_name','$gender','$email','$phone')";
 
