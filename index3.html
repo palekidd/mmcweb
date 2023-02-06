@@ -3,93 +3,84 @@
   <head>
     <style>
       form {
-        width: 400px;
+        width: 500px;
         margin: 0 auto;
-        text-align: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
       }
 
-      input[type="text"], input[type="email"], select {
-        padding: 10px;
+      input[type="text"],
+      select,
+      textarea {
         width: 100%;
+        padding: 10px;
         margin-bottom: 20px;
-        box-sizing: border-box;
-        border: 1px solid #ccc;
         border-radius: 5px;
+        border: 1px solid #ddd;
       }
 
       input[type="submit"] {
-        padding: 10px 20px;
-        background-color: #4CAF50;
+        width: 100%;
+        padding: 10px;
+        background-color: green;
         color: white;
-        border: none;
         border-radius: 5px;
+        border: none;
         cursor: pointer;
       }
 
       table {
         width: 100%;
-        margin-top: 20px;
+        border-collapse: collapse;
       }
 
-      th, td {
+      th,
+      td {
         border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
+        padding: 10px;
       }
 
       th {
         background-color: #ddd;
+        text-align: left;
       }
     </style>
   </head>
   <body>
-    <form id="myForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <br><br>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <br><br>
-      <label for="sport">Favorite sport:</label>
-      <select id="sport" name="sport">
-        <option value="">Select one...</option>
-        <option value="football">Football</option>
-        <option value="basketball">Basketball</option>
-        <option value="tennis">Tennis</option>
-        <option value="other">Other</option>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <select>
+        <option value="">Choose a city</option>
+        <option value="New York">New York</option>
+        <option value="London">London</option>
+        <option value="Paris">Paris</option>
       </select>
-      <br><br>
+      <textarea placeholder="Message"></textarea>
       <input type="submit" value="Submit">
     </form>
 
-    <table id="results">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Favorite Sport</th>
-        </tr>
-      </thead>
-      <tbody id="tableBody"></tbody>
+    <table id="dataTable">
+      <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>Message</th>
+      </tr>
     </table>
 
     <script>
-      // Load any stored data
-      var storedData = JSON.parse(localStorage.getItem("formData")) || [];
+      const formData = {
+        name: "John Doe",
+        city: "New York",
+        message: "Hello, world!",
+      };
 
-      // Populate the table with the stored data
-      var tableBody = document.getElementById("tableBody");
-      for (var i = 0; i < storedData.length; i++) {
-        var data = storedData[i];
-        var row = tableBody.insertRow();
-        var nameCell = row.insertCell(0);
-        var emailCell = row.insertCell(1);
-        var sportCell = row.insertCell(2);
-        nameCell.innerHTML = data.name;
-        emailCell.innerHTML = data.email;
-        sportCell.innerHTML = data.sport;
-      }
+      const dataTable = document.getElementById("dataTable");
 
-      // Handle the form submit event
-     </script>
-     
+      const row = dataTable.insertRow();
+      row.insertCell().innerHTML = formData.name;
+      row.insertCell().innerHTML = formData.city;
+      row.insertCell().innerHTML = formData.message;
+    </script>
+  </body>
+</html>
