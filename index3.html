@@ -70,24 +70,25 @@
           <th>Favorite Sport</th>
         </tr>
       </thead>
-      <tbody></tbody>
+      <tbody id="tableBody"></tbody>
     </table>
 
     <script>
-      document.getElementById("myForm").addEventListener("submit", function(e) {
-        e.preventDefault();
+      // Load any stored data
+      var storedData = JSON.parse(localStorage.getItem("formData")) || [];
 
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var sport = document.getElementById("sport").value;
-
-        var tableBody = document.getElementById("results").getElementsByTagName("tbody")[0];
+      // Populate the table with the stored data
+      var tableBody = document.getElementById("tableBody");
+      for (var i = 0; i < storedData.length; i++) {
+        var data = storedData[i];
         var row = tableBody.insertRow();
         var nameCell = row.insertCell(0);
         var emailCell = row.insertCell(1);
         var sportCell = row.insertCell(2);
-        nameCell.innerHTML = name;
-        emailCell.innerHTML = email;
-        sportCell.innerHTML = sport;
-      });
-    </
+        nameCell.innerHTML = data.name;
+        emailCell.innerHTML = data.email;
+        sportCell.innerHTML = data.sport;
+      }
+
+      // Handle the form submit event
+     
