@@ -7,13 +7,24 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Scrolling Nav - Start Bootstrap Template</title>
+  <title>Matthew McLaren – Teaching Portfolio</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
+  <!-- Custom styles -->
   <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  <style>
+    /* Image hover effect */
+    .gallery-img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-img:hover {
+      transform: scale(1.03);
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    }
+  </style>
 </head>
 
 <body id="page-top">
@@ -21,149 +32,174 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Resume Homepage 4/11/2025</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Matthew McLaren</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Teaching Areas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Recent Teaching/Pedagogy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#songs">Extra Curricular</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact Info</a>
-          </li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Teaching Areas</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pedagogy">Teaching & Pedagogy</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#extra">Extra Curricular</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- Header -->
   <header class="bg-primary text-white">
     <div class="container text-center">
-      <h1>Matthew McLaren Resume</h1>
-      <p class="lead">2025</p>
+      <h1>Matthew McLaren</h1>
+      <p class="lead">Educator | HPE | Accounting | STEM</p>
+      <a href="My_CPD_Records2025.pdf" class="btn btn-light btn-lg mt-3" target="_blank">📄 Download Resume</a>
     </div>
   </header>
 
+  <!-- Teaching Areas -->
   <section id="about">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Teaching Areas</h2>
-          <p class="lead">I'm formally trained at QUT in HPE and Accounting however my experience and passion has changed:</p>
+          <p class="lead">Formally trained at QUT in HPE and Accounting, with broad experience across disciplines:</p>
           <ul>
-            <li>I have three years experience teaching maths, I enjoy the puzzles and logic.</li>
-            <li>Computer science comes naturally to me, I have taught this for five years.</li>
-            <li>When schools need me to learn something new I am happy to have previously taught sewing, cooking, religion, science, marine studies and more</li>
-          </ul>
-        </div>
-      </div>
-    </div><section id="services" class="bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <h2>Photos of Teaching and Pedagogy (2025)</h2>
-        <p class="lead">From the cross country to the curriculum</p>
-        <ol>
-          <!-- New 2025 additions first -->
-          <li>Professional Development Record (2025)</li>
-          <br>
-          <img src="PDrecordimage.png" class="responsive">
-
-          <li>Recent Readings</li>
-          <br>
-          <img src="myreadings.jpg" class="responsive">
-
-          <li>Download Full CPD Records (PDF)</li>
-          <br>
-          <a href="My_CPD_Records2025.pdf" target="_blank">📄 View My CPD Records 2025</a>
-
-          <!-- Existing items moved down -->
-          <li>Yesterday morning</li>
-          <br>
-          <img src="school1.jpg" class="responsive">
-
-          <li>Clear goals and homework</li>
-          <br>
-          <img src="School2.png" class="responsive">
-
-          <li>Teams and OneNote</li>
-          <br>
-          <img src="school3.png" class="responsive">
-
-          <li>Homework help</li>
-          <br>
-          <img src="school4.png" class="responsive">
-
-          <li>Maths teaching example</li>
-          <br>
-          <img src="school7.png" class="responsive">
-        </ol>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <section id="songs">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2>Extra Curricular</h2>
-          <p class="lead">Kokoda hiking for example</p>
-          <ul>
-            <li>PHP maths video</li>
-            <br>
-            <!-- 16:9 aspect ratio -->
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/btjX49fd6Sw"></iframe>
-            </div>
-            <li>UQ women in STEM</li>
-            <br>
-            <img src="school5.png" class="responsive">
-            <li>Chappy student VS teacher netball</li>
-            <br>
-            <img src="school6.jpg" class="responsive">
-            <li>Kokoda Challenge 48 and 96km</li>
-            <br>
-            <img src="hike1.webp" class="responsive">
+            <li>Three years teaching mathematics, passionate about puzzles and logic.</li>
+            <li>Five years teaching computer science, a natural area of expertise.</li>
+            <li>Adaptable to new subjects: experience in sewing, cooking, religion, science, marine studies, and more.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="bg-light">
+  <!-- Pedagogy Gallery -->
+  <section id="pedagogy" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>Teaching & Pedagogy (2025)</h2>
+          <p class="lead">Snapshots from professional development and classroom practice:</p>
+          <div class="row">
+
+            <!-- New 2025 items -->
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <img src="PDrecordimage.png" class="card-img-top gallery-img" alt="PD Record">
+                <div class="card-body">
+                  <h5 class="card-title">Professional Development Record (2025)</h5>
+                  <a href="My_CPD_Records2025.pdf" target="_blank" class="btn btn-primary">View Full PDF</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <img src="myreadings.jpg" class="card-img-top gallery-img" alt="My Readings">
+                <div class="card-body">
+                  <h5 class="card-title">Recent Readings</h5>
+                  <p class="card-text">Keeping current with pedagogy and educational research.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Existing items -->
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <img src="school1.jpg" class="card-img-top gallery-img" alt="Yesterday Morning">
+                <div class="card-body">
+                  <h5 class="card-title">Yesterday Morning</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <img src="School2.png" class="card-img-top gallery-img" alt="Clear Goals">
+                <div class="card-body">
+                  <h5 class="card-title">Clear Goals and Homework</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <img src="school3.png" class="card-img-top gallery-img" alt="Teams and OneNote">
+                <div class="card-body">
+                  <h5 class="card-title">Teams and OneNote</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <img src="school4.png" class="card-img-top gallery-img" alt="Homework Help">
+                <div class="card-body">
+                  <h5 class="card-title">Homework Help</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="card">
+                <img src="school7.png" class="card-img-top gallery-img" alt="Maths Example">
+                <div class="card-body">
+                  <h5 class="card-title">Maths Teaching Example</h5>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extra Curricular -->
+  <section id="extra">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Contact Info</h2>
-          <p class="lead">Mob: 0413 712 839 Email: matthew.mclaren@gmail.com</p>
+          <h2>Extra Curricular</h2>
+          <p class="lead">Highlights of my involvement beyond the classroom:</p>
+          <ul>
+            <li>PHP maths video</li>
+            <div class="embed-responsive embed-responsive-16by9 mb-3">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/btjX49fd6Sw"></iframe>
+            </div>
+            <li>UQ Women in STEM</li>
+            <img src="school5.png" class="img-fluid rounded shadow-sm gallery-img mb-3">
+            <li>Chappy student VS teacher netball</li>
+            <img src="school6.jpg" class="img-fluid rounded shadow-sm gallery-img mb-3">
+            <li>Kokoda Challenge 48 and 96km</li>
+            <img src="hike1.webp" class="img-fluid rounded shadow-sm gallery-img mb-3">
+          </ul>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-light">
+    <div class="container text-center">
+      <h2>Contact</h2>
+      <p class="lead">Mob: 0413 712 839 | Email: matthew.mclaren@gmail.com</p>
+      <a href="mailto:matthew.mclaren@gmail.com" class="btn btn-primary">Email Me</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Mr McLaren</p>
+      <p class="m-0 text-center text-white">© 2025 Matthew McLaren</p>
     </div>
   </footer>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom JavaScript for this theme -->
   <script src="js/scrolling-nav.js"></script>
 </body>
 </html>
